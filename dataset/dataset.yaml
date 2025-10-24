@@ -1,0 +1,6 @@
+names:
+- bird
+nc: 1
+test: /mnt/Atlante/SEG_YOLO_uccelli/dataset/images/test
+train: /mnt/Atlante/SEG_YOLO_uccelli/dataset/images/train
+val: /mnt/Atlante/SEG_YOLO_uccelli/dataset/images/val
