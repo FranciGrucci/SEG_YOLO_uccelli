@@ -101,7 +101,7 @@ The following metrics were obtained after a 2-epoch test run:
 
 ##### Source
 @misc{Grucci2025BirdYOLO,
-  title={Bird Detection via YOLOv8},
+  title={Bird Segmentation via YOLOv8},
   author={Grucci Francesca},
   year={2025},
   note={University project, custom dataset}
