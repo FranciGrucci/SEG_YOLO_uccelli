@@ -32,6 +32,12 @@ dataset/labels/*
 !dataset/*.yaml  # keep yaml files
 !dataset/*.txt   # keep label txt if needed
 
+dataset/uccello_exp*/weights/
+*.pt
+*.pth
+*.zip
+*.tar
+
 # Temporary / OS
 *.swp
 *.tmp
