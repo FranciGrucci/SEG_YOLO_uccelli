@@ -1,0 +1,59 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.env
+*.venv
+env/
+venv/
+*.egg-info/
+dist/
+build/
+
+# Anaconda
+*.conda
+*.ipynb_checkpoints
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
+
+# Dataset / outputs / weights
+dataset/uccello_exp/
+dataset/plots/
+dataset/__pycache__/
+dataset/*.pt
+dataset/*.cache
+dataset/images/*
+dataset/labels/*
+!dataset/*.yaml  # keep yaml files
+!dataset/*.txt   # keep label txt if needed
+
+# Temporary / OS
+*.swp
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db
+
+echo "
+# Checkpoints pesanti
+dataset/uccello_exp*/weights/
+yolo*.pt
+
+# Dataset e immagini raw
+Segmentation_FRA/20221219_acq002_labels_yolo_seg_multi/
+Segmentation_FRA/20250327_ACQ002/
+Segmentation_FRA/seg_images_jpg/
+Segmentation_FRA/seg_labels_yolo/
+images/
+labels/
+previews/
+
+# Cache e logs
+*.cache
+*.log
+" > .gitignore
