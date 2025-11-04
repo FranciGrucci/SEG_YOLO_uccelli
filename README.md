@@ -38,6 +38,7 @@ dataset/
 │   ├── val/
 │   └── test/
 └── dataset.yaml
+```
 
 The `dataset.yaml` file contains the paths to train, val, and test images, along with the class names.
 
