@@ -27,6 +27,8 @@ The dataset is organized in a standard YOLO format with images and corresponding
 
 The dataset YAML (`dataset.yaml`) is automatically created and contains paths to images, number of classes (in this case 1), and class names ('bird').
 
+'''
+
 dataset/
 ├── images/
 │ ├── train/
@@ -37,6 +39,7 @@ dataset/
 │ ├── val/
 │ └── test/
 └── dataset.yaml
+'''
 
 The `dataset.yaml` file contains the paths to train, val, and test images, along with the class names.
 
