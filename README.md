@@ -187,8 +187,8 @@ The following metrics were obtained after a 2-epoch test run on the **test set**
 
 The model demonstrates good detection and segmentation performance even on small objects, thanks to the combination of YOLOv8 and SAHI slicing.
 
-![Precision-Recall Curve](plots/precision_recall_curve.png)
-![mAP50 per Class](plots/mAP50_per_class.png)
+
+
 
 
 ### Final Results (20 epochs)
