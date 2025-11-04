@@ -1,4 +1,4 @@
-ABSTRACT
+## ABSTRACT
 
 In this project, I developed a deep learning pipeline for automatic bird detection and segmentation in high resolution images. I used a YOLOv8 model trained on a custom dataset of wild birds and applied a tiling strategy to preserve the visibility of small objects in large images. The dataset was split 80/10/10 for training, validation, and testing, and I tuned custom hyperparameters to improve convergence on imbalanced scenes.
 
@@ -185,7 +185,7 @@ The model demonstrates good detection and segmentation performance even on small
 ![mAP50 per Class](plots/mAP50_per_class.png)
 
 
-### 📊 Final Results (20 epochs)
+### Final Results (20 epochs)
 
 Il modello è stato addestrato per 20 epoche su YOLOv8n con slicing SAHI su immagini 1024×1024.
 Rispetto al test iniziale a 2 epoche, le metriche sono migliorate sensibilmente, indicando un training stabile e progressivo senza overfitting.
@@ -200,7 +200,7 @@ Rispetto al test iniziale a 2 epoche, le metriche sono migliorate sensibilmente,
 Questi valori confermano che il modello è in grado di generalizzare bene anche su immagini non viste.
 
 ---
-
+``` bash
 ## Pipeline Overview
 
 High-level workflow of the bird segmentation and detection pipeline:
@@ -235,7 +235,7 @@ Evaluation & Results
        └─ Precision / Recall / mAP metrics
 
 
-
+```
 
 
 ##### Source
