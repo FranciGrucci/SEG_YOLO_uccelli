@@ -2,7 +2,7 @@ ABSTRACT
 
 In this project, I developed a deep learning pipeline for automatic bird detection and segmentation in high resolution images. I used a YOLOv8 model trained on a custom dataset of wild birds and applied a tiling strategy to preserve the visibility of small objects in large images. The dataset was split 80/10/10 for training, validation, and testing, and I tuned custom hyperparameters to improve convergence on imbalanced scenes.
 
-To handle high resolution constraints, I integrated the SAHI (Slicing Aided Hyper Inference) framework, which crops images into overlapping tiles while preserving accurate bounding box and mask mappings. Model performance was evaluated using the Intersection over Union (IoU) metric, showing that YOLOv8 achieves strong detection and segmentation results under real-world conditions. Overall, the proposed approach makes bird population monitoring more efficient and scalable
+To handle high resolution constraints, I integrated the SAHI (Slicing Aided Hyper Inference) framework, which crops images into overlapping tiles while preserving accurate bounding box and mask mappings. Model performance was evaluated using the Intersection over Union (IoU) metric, showing that YOLOv8 achieves strong detection and segmentation results under real world conditions. Overall, the proposed approach makes bird population monitoring more efficient and scalable
 
 
 # Bird Detection and Segmentation with YOLOv8 and SAHI
