@@ -130,7 +130,13 @@ To run this project, install the required packages:
 pip install ultralytics sahi matplotlib
 
 ```
+The training process uses the native YOLOv8 segmentation loss, implemented within the Ultralytics framework.
+It combines:
+	•	CIoU Loss for bounding box regression,
+	•	Binary Cross-Entropy (BCE) Loss for objectness and class confidence, and
+	•	Cross-Entropy + Dice Loss for segmentation masks.
 
+This composite loss ensures precise localization and accurate mask prediction for small birds in high-resolution scenes.
 #### Evaluaion
 
 After training, the model is evaluated on the test set
