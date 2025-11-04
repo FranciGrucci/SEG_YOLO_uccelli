@@ -216,8 +216,8 @@ Images (High-Res)
        ▼
 Segmentation Label Generation
        │
-       ├─ Parse contours (`CAM*_countorns.dat`)
-       ├─ Build polygons (Alphashape / Shapely / Convex Hull)
+       ├─ Parse contours (`CAM*_contours.dat`)
+       ├─ Build polygons (AlphaShape / Shapely / Convex Hull)
        └─ Normalize coordinates & write YOLOv8 `.txt` labels
        │
        ▼
@@ -233,13 +233,16 @@ YOLOv8 Training (Segmentation)
        ├─ Pretrained model: `yolov8n.pt`
        ├─ Dataset: Train / Val / Test split
        ├─ Hyperparameters: AdamW, batch=4, img=1024
+       ├─ Loss Function:
+       │     • Bounding box regression → CIoU Loss  
+       │     • Objectness (confidence) → Binary Cross-Entropy (BCE)  
+       │     • Segmentation mask → Cross-Entropy + Dice Loss  
        └─ Output: Model weights & metrics
        │
        ▼
 Evaluation & Results
        │
-       └─ Precision / Recall / mAP metrics
-
+       └─ Precision / Recall / mAP / IoU metrics
 
 ```
 
