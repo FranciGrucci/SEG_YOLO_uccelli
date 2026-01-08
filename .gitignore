@@ -62,4 +62,24 @@ previews/
 # Cache e logs
 *.cache
 *.log
-" > .gitignore
+" > .gitignoresort/
+
+# repo annidati / codice esterno
+sort/
+YOLOv8/
+
+# dataset
+dataset/uccello_exp*/
+20221219_acq002_labels_yolo_seg_multi/
+
+# risultati / test
+test_results_*/
+mask_quality_report/
+
+# script di test
+test_*.py
+
+# cache
+__pycache__/
+*.pyc
+

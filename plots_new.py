@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import os
 
-exp_dir = "/mnt/Atlante/SEG_YOLO_uccelli/dataset/uccello_exp4"
+exp_dir = "/mnt/Atlante/SEG_YOLO_uccelli/dataset/uccello_exp3"
 csv_file = os.path.join(exp_dir, "results.csv")
 plots_dir = os.path.join(exp_dir, "plots_manual")
 

@@ -1,7 +1,7 @@
 import os
 from PIL import Image
 
-INPUT_DIR = "/mnt/Atlante/PROGgETTO_MATTEO/Acq_uccelli/Original/20221219_acq002"
+INPUT_DIR = "/mnt/Atlante/PROGgETTO_MATTEO/Segmentation/20221207_acq004/CAM1"
 OUTPUT_DIR = "/home/artswarms/Desktop/Segmentation_FRA/seg_images_jpg"
 
 os.makedirs(OUTPUT_DIR, exist_ok=True)
